@@ -1,1 +1,17 @@
-**/node_modules/
+api/node_modules/
+client/node_modules/
+
+# production
+client/build
+client/dist
+client/.next
+
+# testing
+client/coverage
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
