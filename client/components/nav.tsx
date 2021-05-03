@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from 'next/link';
 
@@ -8,8 +9,9 @@ const links: { href: string; label: string; key: string }[] = [
     key: '',
   },
 ].map((link) => {
-  link.key = `nav-link-${link.href}-${link.label}`;
-  return link;
+  const newLink = link;
+  newLink.key = `nav-link-${link.href}-${link.label}`;
+  return newLink;
 });
 
 const Nav = () => (
